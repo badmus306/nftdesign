@@ -22,7 +22,12 @@ const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, revers
           <p className={`
           ${reverse ? styles.blackText : styles.whiteText}
           ${styles.descriptionText}`}>{description}</p>
-         
+          {showBtn && (
+            <Button 
+              assetUrl={assets.react}
+              link="#"
+            />
+          )}
         </div>
         <div
           className={`flex-1 ${styles.flexCenter}p-8 sm:px-0`}
